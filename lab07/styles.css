@@ -1,0 +1,61 @@
+/* General */
+body {
+    font-family: Georgia, serif;
+    background-color:#404040
+}
+
+h1, h2, h4 {
+    color:#70b8fb;
+}
+
+p, li, dt, dd, form, table{
+    color:#d1f1ff;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+/* Links */
+nav a {color:#50e8ff;}
+
+nav a:hover {background-color:#282828;}
+
+p a {color:#ff9114;}
+
+p a:visited {color:#593007;}
+
+nav {
+    background-color:#c5dde78e;
+    
+    margin-bottom: 30px;
+
+    padding: 10px;
+}
+
+/* Table */
+.evenrow {
+    background-color:#282828;
+}
+
+.border {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+/* Proficiency colors */
+.beginner {
+    color:#049604;
+}
+
+.intermediate {
+    color:#effd2b;
+}
+
+.advanced {
+    color:#ff0000;
+}
