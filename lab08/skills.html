@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Skills</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="skills.html">Skills</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <h1>My Skills</h1>
+
+        <h2>Proficiency is divided into 3 levels:</h2>
+        <dl>
+            <dt class="beginner">Beginner</dt>
+            <dd>Just started, no more than 6 months of experience.</dd>
+
+            <dt class="intermediate">Intermediate</dt>
+            <dd>Between 6 months to a year of experience. Have used it for multiple classes or projects.</dd>
+
+            <dt class="advanced">Advanced</dt>
+            <dd>More than a year of experience.</dd>
+        </dl>
+
+                        <!--Table 1:-->
+
+<!-- 
+
+As of right now, the table outside holds 3 tables inside, so we had to use .border to make the inside tables have a border while
+the one outside remained borderless.
+
+    Color Key
+Beginner:
+<td><p style="color: green;">Beginner</p></td>
+
+Intermediate:
+<td><p style="color: rgb(175, 175, 33);">Intermediate</p></td>
+
+Advanced:
+<td><p style="color: red;">Advanced</p></td>
+-->
+        <table> <!-- OUTSIDE -->
+            <tr> <td>
+                <table class="border">
+                <caption>Coding Skills</caption>
+                <tr>
+                    <th class="border">Category</th>
+                    <th class="border">Skill</th>
+                    <th class="border">Proficiency</th>
+                </tr>
+
+<!-- 
+            ROWS data:
+C
+C++
+Haskell
+HTML/CSS
+Java
+JavaScript
+Python
+Racket
+Swift
+
+-->
+                <tr class="evenrow">
+                    <td class="border">Coding</td>
+                    <td class="border">C</td>
+                    <td class="border"><p class="intermediate">Intermediate</p></td>
+                </tr>
+                <tr>
+                    <td class="border">Coding</td>
+                    <td class="border">C++</td>
+                    <td class="border"><p class="intermediate">Intermediate</p></td>
+                </tr>
+                <tr class="evenrow">
+                    <td class="border">Coding</td>
+                    <td class="border">Haskell</td>
+                    <td class="border"><p class="beginner">Beginner</p></td>
+                </tr>
+                <tr>
+                    <td class="border">Coding</td>
+                    <td class="border">HTML/CSS</td>
+                    <td class="border"><p class="beginner">Beginner</p></td>
+                </tr>
+                <tr class="evenrow">
+                    <td class="border">Coding</td>
+                    <td class="border">Java</td>
+                    <td class="border"><p class="intermediate">Intermediate</p></td>
+                </tr>
+                <tr>
+                    <td class="border">Coding</td>
+                    <td class="border">JavaScript</td>
+                    <td class="border"><p class="beginner">Beginner</p></td>
+                </tr>
+                <tr class="evenrow">
+                    <td class="border">Coding</td>
+                    <td class="border">Python</td>
+                    <td class="border"><p class="advanced">Advanced</p></td>
+                </tr>
+                <tr>
+                    <td class="border">Coding</td>
+                    <td class="border">Racket</td>
+                    <td class="border"><p class="beginner">Beginner</p></td>
+                </tr>
+                <tr class="evenrow">
+                    <td class="border">Coding</td>
+                    <td class="border">Swift</td>
+                    <td class="border"><p class="beginner">Beginner</p></td>
+                </tr>
+            </table>
+            </td>
+<!-- 
+            ROWS data:
+English
+French
+Spanish
+Japanese
+
+-->
+            <td>
+            <table class="border">
+                <caption>Language Skills</caption>
+                <tr>
+                    <th class="border">Category</th>
+                    <th class="border">Skill</th>
+                    <th class="border">Proficiency</th>
+                </tr>
+                <tr class="evenrow">
+                    <td class="border">Language</td>
+                    <td class="border">English</td>
+                    <td class="border"><p class="advanced">Advanced</p></td>
+                </tr>
+                <tr>
+                    <td class="border">Language</td>
+                    <td class="border">French</td>
+                    <td class="border"><p class="beginner">Beginner</p></td>
+                </tr>
+                <tr class="evenrow">
+                    <td class="border">Language</td>
+                    <td class="border">Japanese</td>
+                    <td class="border"><p class="intermediate">Intermediate</p></td>
+                </tr>
+                <tr>
+                    <td class="border">Language</td>
+                    <td class="border">Spanish</td>
+                    <td class="border"><p class="advanced">Advanced</p></td>
+                </tr>
+            </table>
+            </td>
+<!-- 
+            ROWS data:
+Cycling
+Esports - Competing Profesisonally
+Running
+Swimming
+Tennis
+
+-->   
+            <td>
+            <table class="border">
+                <caption>Sports/Hobbies</caption>
+                <tr>
+                    <th class="border">Category</th>
+                    <th class="border">Skill</th>
+                    <th class="border">Proficiency</th>
+                </tr>
+                <tr class="evenrow">
+                    <td class="border">Sports</td>
+                    <td class="border">Cycling</td>
+                    <td class="border"><p class="beginner">Beginner</p></td>
+                </tr>
+                <tr>
+                    <td class="border">Esports</td>
+                    <td class="border">Competing Profesisonally</td>
+                    <td class="border"><p class="advanced">Advanced</p></td>
+                </tr>
+                <tr class="evenrow">
+                    <td class="border">Sports</td>
+                    <td class="border">Running</td>
+                    <td class="border"><p class="advanced">Advanced</p></td>
+                </tr>
+                <tr>
+                    <td class="border">Sports</td>
+                    <td class="border">Swimming</td>
+                    <td class="border"><p class="advanced">Advanced</p></td>
+                </tr>
+                <tr class="evenrow">
+                    <td class="border">Sports</td>
+                    <td class="border">Tennis</td>
+                    <td class="border"><p class="beginner">Beginner</p></td>
+                </tr>
+            </table>
+            </td>
+            </tr> <!--outside row -->
+        </table> <!-- OUTSIDE TABLE -->
+    </body>
+
+</html>

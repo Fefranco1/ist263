@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+    .row1, .row2 {
+        display: flex;
+        margin: 20px;
+    }
+
+    .row1 div, .row2 div {
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .box1, .box2 {
+        background-color: rgb(6, 52, 70);
+        border-radius: 1em;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a> | 
+<a href="skills.html">Skills</a> | 
+<a href="contact.html">Contact</a>
+</nav>
+
+<h1>My Contact Information</h1>
+
+<!-- ROW 1 -->
+<div class="row1 box1">
+
+    <div>
+        <p>Syracuse University<br>
+        150 Henry Street<br>
+        Syracuse, NY - 13244</p>
+    </div>
+
+    <div>
+        <p>
+        <a href="mailto:fefranco@syr.edu">Emiliano Franco's Syracuse Email</a>
+        </p>
+
+        <img src="../images/logo-sized.png" alt="LinkedIn">
+
+        <p>
+        <a href="https://www.linkedin.com/in/femifranco/" target="_blank">
+        My LinkedIn Profile
+        </a>
+        </p>
+    </div>
+
+</div>
+
+<!-- ROW 2 -->
+<div class="row2 box2">
+
+    <div>
+
+        <h4>Contact Me!</h4>
+
+        <form action="https://formspree.io/f/xwvnkwpw" method="post">
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <p>Preferred Contact Method:</p>
+
+            <input type="radio" id="email" name="contact_method" value="email">
+            <label for="email">Email</label><br>
+
+            <input type="radio" id="phone" name="contact_method" value="phone">
+            <label for="phone">Phone</label><br><br>
+
+            <label for="message">Write a message below!:</label><br>
+
+            <textarea id="message" name="message" rows="4" cols="40"></textarea><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+    <div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.2306304070494!2d-76.14368048885483!3d43.03657877101768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39980d3021f%3A0x591e978c260aff0e!2s150%20Henry%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1769635375874!5m2!1sen!2sus"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+        </iframe>
+
+    </div>
+
+</div>
+
+<hr>
+
+</body>
+</html>
