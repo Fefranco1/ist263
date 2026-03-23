@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Participation 10</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .large-msg { display: none; }
+    .small-msg { display: none; }
+    
+    @media only screen and (min-width: 801px) {
+      .large-msg { display: block;}
+    }
+    @media only screen and (max-width: 800px) {
+      .small-msg { display: block;}
+    }
+  </style>
+</head>
+<body>
+    <p class="large-msg">I'm large.<br><span style="color:#e90c0c">The viewport is over 800 pixels.</span></p>
+    <p class="small-msg">I'm small.<br><span style="color:#22c413">The viewport is 800 pixels or less.</span></p>
+</body>
+</html>
