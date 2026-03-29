@@ -115,3 +115,15 @@ nav {
 
     padding: 10px;
 }
+
+/* Media */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+    nav span {
+        display: none;
+    }
+}
