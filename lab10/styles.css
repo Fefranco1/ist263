@@ -1,0 +1,117 @@
+/* General */
+body {
+    font-family: Georgia, serif;
+    background-color:#404040
+}
+
+h1, h2, h3, h4 {
+    color:#70b8fb;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+p, li, dt, dd, form, table{
+    color:#d1f1ff;
+}
+
+.centerTitle {
+    text-align: center;
+}
+
+.profileImg {
+    max-width: 100%;
+}
+
+
+/* Skills Intro */
+.skillsIntro {
+    display: flex;
+    margin: 10px 40px 20px 40px;
+    padding: 20px;
+    background-color: rgb(44, 48, 57);
+    border-radius: 2em;
+}
+
+.skillsImage {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.leftIntro {
+    flex-basis: 50%;
+    margin: 40px;
+}
+
+
+/* Skills Flex Table */
+.evenrow {
+    background-color:#5c5b5b;
+}
+.oddrow {           
+    background-color: #292929;
+}
+
+.skillsflex {
+    display: flex;
+    margin: 10px 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: rgb(44, 48, 57);
+    border-radius: 2em;
+}
+.tablecontainer1, .tablecontainer2, .tablecontainer3 {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    overflow-x: auto; /* Searched up in W3Schools, makes tables scrollable */
+}
+
+.tablecontainer1 {
+    margin-left: 10px;
+}
+
+.tablecontainer3 {
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+
+/* Proficiency colors */
+.beginner {
+    color:#049604;
+}
+
+.intermediate {
+    color:#effd2b;
+}
+
+.advanced {
+    color:#ff0000;
+}
+
+
+/* Links */
+nav a {color:#50e8ff;}
+
+nav a:hover {background-color:#296363;}
+
+p a {color:#ff9114;}
+
+p a:visited {color:#593007;}
+
+nav {
+    background-color: rgb(44, 48, 57);
+    
+    margin-bottom: 30px;
+
+    padding: 10px;
+}
