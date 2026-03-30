@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews & Submit</title>
+  </head>
+  <body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="history.html">History & Types</a>
+            <a href="reviews.html">Reviews & Submit</a>
+        </nav>
+        <h1>My Apple Pie Reviews</h1>
+    </header>
+
+    <main>
+
+      <!-- Reviews -->
+      <div>
+        <h2>My Apple Pie Reviews</h2>
+        <p>
+          Here are all the apple pies I have tried. Each review includes photos,
+          my detailed thoughts, and my rating using the 5-point system. I will
+          keep adding new reviews as I discover more pies.
+        </p>
+
+        <!-- Review: Casa O -->
+        <article>
+          <h3>Citi Market - 5/5 Points</h3>
+          <img src="media/Page3/Citimarket.jpg" alt="Apple pie from Citi Market" />
+
+          <h4>Rating Breakdown</h4>
+          <ul>
+            <li><strong>Visual Appeal:</strong> 1/1 - The pie looks beautiful with a perfect golden-brown crust</li>
+            <li><strong>Balanced Sweetness:</strong> 1/1 - Not too sweet, great balance of tart and sweet</li>
+            <li><strong>Perfect Crust:</strong> 1/1 - Flaky, buttery, just the right thickness</li>
+            <li><strong>Good Apple Texture:</strong> 1/1 - Apples are soft but still have bite</li>
+            <li><strong>Overall Flavor Balance:</strong> 1/1 - Everything works together perfectly</li>
+          </ul>
+
+          <h4>My Review</h4>
+          <p>
+            This apple pie is amazing. The crust is perfectly flaky and golden.
+            When you bite into it, it cracks just right. The apples are fresh
+            and you can taste each slice. The sweetness is perfect - not
+            too much sugar, just enough to bring out the apple flavor. Would I
+            buy it again? Yes, absolutely!
+          </p>
+        </article>
+
+        <!-- Review: Costco -->
+        <article>
+          <h3>Costco - 2/5 Points</h3>
+          <p><strong>Location:</strong> Costco Wholesale</p>
+          <img src="media/Page3/Costco1.jpg" alt="Apple pie from Costco Wholesale" />
+
+          <h4>Rating Breakdown</h4>
+          <ul>
+            <li><strong>Visual Appeal:</strong> 1/1 - Looks nice and well-made</li>
+            <li><strong>Balanced Sweetness:</strong> 0/1 - Too sweet for my taste</li>
+            <li><strong>Perfect Crust:</strong> 1/1 - Good flaky crust on top, bottom is slightly thick</li>
+            <li><strong>Good Apple Texture:</strong> 0/1 - Apples are too soft, almost mushy</li>
+            <li><strong>Overall Flavor Balance:</strong> 0/1 - Despite issues, flavors work okay together</li>
+          </ul>
+
+          <h4>My Review</h4>
+          <p>
+            This apple pie is good but not great. The crust visually looks nice.
+            However, the top and bottom crust is a little too thick. The apples
+            taste okay, but they are very soft, almost like applesauce. I wish
+            they had more texture. The pie is very sweet - maybe too much
+            sugar - and requires you to use ice cream to balance out the
+            sweetness. Overall, this is an okay apple pie if you need something
+            fast for Thanksgiving. Would I buy it again? Maybe, if nothing else
+            is available.
+          </p>
+        </article>
+      </div>
+
+      <!-- Submit a Review -->
+      <div>
+        <h2>Submit Your Own Apple Pie Review</h2>
+        <p>
+          Have you tried an apple pie? Share your review! I want to hear about
+          the apple pies you have tasted. Use my rating system to score the pie
+          and tell me what you think. Your review might appear on this website!
+        </p>
+
+        <form action="https://formspree.io/f/xdapgnpd" method="post">
+
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br><br>
+
+          <label for="bakery">Bakery/Restaurant:</label><br>
+          <input type="text" id="bakery" name="bakery"><br><br>
+
+          <p>Visual Appeal - Did the pie look good?</p>
+          <input type="radio" id="visual-yes" name="visual" value="yes">
+          <label for="visual-yes">Yes (1 point)</label><br>
+          <input type="radio" id="visual-no" name="visual" value="no">
+          <label for="visual-no">No (0 points)</label><br><br>
+
+          <p>Balanced Sweetness - Was the sweetness just right?</p>
+          <input type="radio" id="sweetness-yes" name="sweetness" value="yes">
+          <label for="sweetness-yes">Yes (1 point)</label><br>
+          <input type="radio" id="sweetness-no" name="sweetness" value="no">
+          <label for="sweetness-no">No (0 points)</label><br><br>
+
+          <p>Perfect Crust - Was the crust good?</p>
+          <input type="radio" id="crust-yes" name="crust" value="yes">
+          <label for="crust-yes">Yes (1 point)</label><br>
+          <input type="radio" id="crust-no" name="crust" value="no">
+          <label for="crust-no">No (0 points)</label><br><br>
+
+          <p>Good Apple Texture - Were the apples the right texture?</p>
+          <input type="radio" id="texture-yes" name="texture" value="yes">
+          <label for="texture-yes">Yes (1 point)</label><br>
+          <input type="radio" id="texture-no" name="texture" value="no">
+          <label for="texture-no">No (0 points)</label><br><br>
+
+          <p>Overall Flavor Balance - Did everything taste good together?</p>
+          <input type="radio" id="flavor-yes" name="flavor" value="yes">
+          <label for="flavor-yes">Yes (1 point)</label><br>
+          <input type="radio" id="flavor-no" name="flavor" value="no">
+          <label for="flavor-no">No (0 points)</label><br><br>
+
+          <label for="review-text">Write your review below!:</label><br>
+          <textarea id="review-text" name="message" rows="4" cols="40"></textarea><br>
+          <input type="submit" value="Submit">
+
+        </form>
+        </div>
+
+        <div>
+          <h3>Review Guidelines</h3>
+          <ul>
+            <li>Be honest but respectful</li>
+            <li>Focus on taste, texture, and quality</li>
+            <li>Use the point system to rate fairly</li>
+            <li>Include specific details about what you liked or disliked</li>
+          </ul>
+
+          <p>Thank you for sharing your apple pie experience!</p>
+
+        </form>
+      </div>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p class="copyright">&copy; 2026</p>
+    </footer>
+
+  </body>
+</html>
