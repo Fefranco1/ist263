@@ -3,106 +3,268 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+
     <title>Apple Pie Reviews!</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /*  HEADER / NAV  */
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 32px;
+        border-bottom: 1px solid #ddd;
+        background: #fff;
+      }
+
+      header h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      nav {
+        display: flex;
+        gap: 28px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #222;
+        font-size: 0.9rem;
+      }
+
+      nav a.active,
+      nav a:hover {
+        color: #c0392b;
+      }
+
+      /*  MAIN  */
+      main {
+        flex: 1;
+        padding: 32px;
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      /*  INTRO: two-column  */
+      .intro-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        align-items: start;
+      }
+
+      .intro-text h2 {
+        font-size: 1.8rem;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+
+      .intro-text p { font-size: 0.88rem; line-height: 1.6; margin-bottom: 14px; }
+
+      .intro-text h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+
+      /* image placeholder box */
+      .img-placeholder {
+        width: 100%;
+        aspect-ratio: 4/3;
+        background: #f0f0f0;
+        border: 1px solid #bbb;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .img-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* fallback cross (shown when image is missing) */
+      .img-placeholder::before,
+      .img-placeholder::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom right,
+          transparent calc(50% - 0.5px),
+          #aaa calc(50% - 0.5px),
+          #aaa calc(50% + 0.5px),
+          transparent calc(50% + 0.5px)
+        );
+      }
+      .img-placeholder::after {
+        background: linear-gradient(
+          to bottom left,
+          transparent calc(50% - 0.5px),
+          #aaa calc(50% - 0.5px),
+          #aaa calc(50% + 0.5px),
+          transparent calc(50% + 0.5px)
+        );
+      }
+      /* hide cross lines when a real image loads */
+      .img-placeholder:has(img)::before,
+      .img-placeholder:has(img)::after { display: none; }
+
+      /*  RATING SECTION  */
+      .rating-section {
+        background: #f5f5f5;
+        border-radius: 4px;
+        padding: 20px 24px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 0;
+      }
+
+      .rating-left h2,
+      .rating-right h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      /* radio-style list */
+      .rating-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .rating-list li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.88rem;
+      }
+
+      /* circle bullet */
+      .rating-list li::before {
+        content: '';
+        flex-shrink: 0;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 2px solid #555;
+        background: #fff;
+      }
+
+      /* vertical divider */
+      .divider {
+        width: 1px;
+        background: #bbb;
+        margin: 0 24px;
+        align-self: stretch;
+      }
+
+      .rating-right p { font-size: 0.88rem; line-height: 1.6; }
+
+      /*  FOOTER  */
+      footer {
+        background: #ddd;
+        padding: 18px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      footer .back-arrow {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #333;
+      }
+
+      footer .copyright {
+        font-size: 0.85rem;
+        color: #444;
+      }
+    </style>
   </head>
   <body>
 
+    <!--  HEADER  -->
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="history.html">History & Types</a>
-            <a href="reviews.html">Reviews & Submit</a>
-        </nav>
-        <h1>Welcome to My Apple Pie Reviews!</h1>
+      <h1>Site Title</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History &amp; Types</a>
+        <a href="reviews.html">Reviews &amp; Submit</a>
+      </nav>
     </header>
 
+    <!--  MAIN  -->
     <main>
 
       <!-- Intro -->
-      <div>
-        <p>
-          Hi! I'm Emiliano Franco, and I love apple pie. I have been tasting and
-          rating (to myself) apple pies for a long time, but now I wish to share
-          my experience tasting this beautiful dessert. This website shares my
-          honest reviews to help you discover the best apple pies, as well as a
-          bit of history about this dessert.
-        </p>
-      </div>
+      <section class="intro-section">
+        <div class="intro-text">
+          <h2>Header</h2>
+          <p>
+            Hi! I'm Emiliano Franco, and I love apple pie. I have been tasting and
+            rating apple pies for a long time, but now I wish to share my experience
+            tasting this beautiful dessert. This website shares my honest reviews to
+            help you discover the best apple pies, as well as a bit of history about
+            this dessert.
+          </p>
 
-      <!-- About Me -->
-      <div>
-        <h2>About Me</h2>
-        <img src="media/Page1/Homemade.JPG" alt="Homemade apple pie">
-        <img src="media/Page1/ApplePie.JPG" alt="Apple pie">
-        <p>
-          My love for apple pie started when I was young. I disliked many
-          candies, cakes, and desserts when I was young, until I found this
-          dessert and fell in love with it. Ever since I was 6 years old, I
-          always had an apple pie as a replacement for my birthday cake. This
-          made apple pie even more special to me because it was my tradition,
-          not just a regular dessert. I made it my mission to taste every apple
-          pie (or apple dessert) that I came across, either in a small bakery or
-          in the fanciest restaurant. Each pie tells a different story through
-          its crust, filling, and flavor. Now I review every apple pie I try,
-          hoping to help others find the perfect slice.
-        </p>
-      </div>
+          <h3>About me</h3>
+          <p>
+            My love for apple pie started when I was young. I disliked many candies,
+            cakes, and desserts when I was young, until I found this dessert and fell
+            in love with it. Ever since I was 6 years old, I always had an apple pie
+            as a replacement for my birthday cake.
+          </p>
+        </div>
 
-      <!-- Rating System -->
-      <div>
-        <h2>My Rating System</h2>
-        <p>I rate each apple pie using a point-based system. Each pie can earn up to 5 points total:</p>
+        <!-- Image -->
+        <div class="img-placeholder">
+          <img src="media/Page1/ApplePie.JPG" alt="Apple pie"
+               onerror="this.style.display='none'">
+        </div>
+      </section>
 
-        <h3>1 Point - Visual Appeal</h3>
-        <p>
-          The pie must look good. I look for a golden-brown crust with no burnt
-          spots, an even shape, and a nice presentation. The pie should look
-          appetizing and well-made.
-        </p>
+      <!-- Rating system -->
+      <section class="rating-section">
+        <div class="rating-left">
+          <h2>Rating</h2>
+          <ul class="rating-list">
+            <li>1 point - Visual Appeal</li>
+            <li>1 point - Balanced Sweetness</li>
+            <li>1 point - Perfect Crust</li>
+            <li>1 point - Good Apple Texture</li>
+            <li>1 point - Overall Flavor Balance</li>
+          </ul>
+        </div>
 
-        <h3>1 Point - Balanced Sweetness</h3>
-        <p>
-            The pie must not be too sweet or too bland. The sugar should enhance
-            the apple flavor, not hide it. There should be a good balance between
-            sweet and tart.
-        </p>
+        <div class="divider"></div>
 
-        <h3>1 Point - Perfect Crust</h3>
-        <p>
-          The crust must be flaky, buttery, and the right thickness. It should
-          not be soggy on the bottom or too hard. A good crust adds flavor and
-          texture to the pie.
-        </p>
-
-        <h3>1 Point - Good Apple Texture</h3>
-        <p>
-          The apples inside should be soft but still have some bite. They should
-          not be mushy or crunchy. The filling should hold together when you cut
-          a slice.
-        </p>
-
-        <h3>1 Point - Overall Flavor Balance</h3>
-        <p>
-          All the flavors must work together well. The cinnamon, apples, crust,
-          and sweetness should create a harmonious taste. This is the most
-          important point because it shows whether the pie is truly excellent.
-        </p>
-
-        <h3>Final Scores</h3>
-        <ul>
-            <li><strong>5 Points</strong> = Perfect, the best apple pie I have ever tasted</li>
-            <li><strong>4 Points</strong> = Excellent, I would buy this again</li>
-            <li><strong>3 Points</strong> = Good, but has some problems</li>
-            <li><strong>2 Points</strong> = Okay, not very special</li>
-            <li><strong>1 Point</strong> = Poor, I do not recommend</li>
-        </ul>
-      </div>
+        <div class="rating-right">
+          <h2>Rating</h2>
+          <p>
+            I rate each apple pie using a point-based system. Each pie can earn up to
+            5 points total. Every criterion matters: from the visual appeal and golden
+            crust to the balanced sweetness and harmonious overall flavor.
+          </p>
+        </div>
+      </section>
 
     </main>
 
+    <!--  FOOTER  -->
     <footer>
-        <hr>
-        <p class="copyright">&copy; 2026</p>
+      <span class="copyright">&copy; 2026</span>
     </footer>
 
   </body>
