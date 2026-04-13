@@ -4,3 +4,38 @@ body {
     color: #222;
     min-height: 100vh;
 }
+
+header h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.9rem;
+}
+
+nav a.active, nav a:hover {
+    color: #c0392b;
+}
+
+/*  FOOTER  */
+footer {
+    background: #b8a295;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .copyright {
+    font-size: 0.85rem;
+    color: #444;
+}

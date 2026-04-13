@@ -12,39 +12,18 @@
         flex-direction: column;
       }
 
-      /*  HEADER / NAV  */
+      /*  Header  */
       header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 14px 32px;
         border-bottom: 1px solid #ddd;
-        background: #fff;
+        background: #b8a295;
       }
 
-      header h1 {
-        font-size: 1.1rem;
-        font-weight: 700;
-        white-space: nowrap;
-      }
 
-      nav {
-        display: flex;
-        gap: 28px;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: #222;
-        font-size: 0.9rem;
-      }
-
-      nav a.active,
-      nav a:hover {
-        color: #c0392b;
-      }
-
-      /*  MAIN  */
+      /*  Main  */
       main {
         flex: 1;
         padding: 32px;
@@ -91,36 +70,9 @@
         display: block;
       }
 
-      /* fallback cross (shown when image is missing) */
-      .img-placeholder::before,
-      .img-placeholder::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          to bottom right,
-          transparent calc(50% - 0.5px),
-          #aaa calc(50% - 0.5px),
-          #aaa calc(50% + 0.5px),
-          transparent calc(50% + 0.5px)
-        );
-      }
-      .img-placeholder::after {
-        background: linear-gradient(
-          to bottom left,
-          transparent calc(50% - 0.5px),
-          #aaa calc(50% - 0.5px),
-          #aaa calc(50% + 0.5px),
-          transparent calc(50% + 0.5px)
-        );
-      }
-      /* hide cross lines when a real image loads */
-      .img-placeholder:has(img)::before,
-      .img-placeholder:has(img)::after { display: none; }
-
       /*  RATING SECTION  */
       .rating-section {
-        background: #f5f5f5;
+        background: #e7d1a9;
         border-radius: 4px;
         padding: 20px 24px;
         display: grid;
@@ -170,26 +122,7 @@
       }
 
       .rating-right p { font-size: 0.88rem; line-height: 1.6; }
-
-      /*  FOOTER  */
-      footer {
-        background: #ddd;
-        padding: 18px 32px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      footer .back-arrow {
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: #333;
-      }
-
-      footer .copyright {
-        font-size: 0.85rem;
-        color: #444;
-      }
+      
     </style>
   </head>
   <body>
