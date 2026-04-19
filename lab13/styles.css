@@ -127,3 +127,21 @@ nav {
         display: none;
     }
 }
+
+
+ /* Skip to content link */
+.skip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 100;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip:focus {
+    top: 0;
+}

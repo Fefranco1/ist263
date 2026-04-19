@@ -41,20 +41,20 @@ footer .copyright {
 }
 
 
- .img-placeholder {
-        width: 100%;
-        aspect-ratio: 4/3;
-        border: 1px solid #bbb;
-        position: relative;
-        overflow: hidden;
-      }
+.img-placeholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border: 1px solid #bbb;
+    position: relative;
+    overflow: hidden;
+}
 
-      .img-placeholder img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
+.img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
       /*  Rating Section  */
       .rating-section {

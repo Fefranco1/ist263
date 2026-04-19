@@ -13,13 +13,14 @@
             padding: 10px;
         }
 
-        th{
+        th {
             background-color: #292929;
         }
     </style>
 </head>
 
 <body>
+    <a class="skip" href="#main-content">Skip to main content</a>
 
     <nav>
         <a href="index.html">Home</a> <span>|</span> 
@@ -27,86 +28,92 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <h1 class="centerTitle">Technical Skills</h1>
+    <main>
+        <h1 class="centerTitle">Technical Skills</h1>
 
-    <div class="skillsIntro">
+        <section class="skillsIntro" aria-label="Proficiency level descriptions">
 
-        <div class="leftIntro">
-            <h2>Proficiency is divided into 3 levels:</h2>
-            <dl>
-                <dt class="beginner">Beginner</dt>
-                <dd>Just started, no more than 6 months of experience.</dd>
+            <div class="leftIntro">
+                <h2>Proficiency is divided into 3 levels:</h2>
+                <dl>
+                    <dt class="beginner">Beginner</dt>
+                    <dd>Just started, no more than 6 months of experience.</dd>
 
-                <dt class="intermediate">Intermediate</dt>
-                <dd>Between 6 months to a year of experience.</dd>
+                    <dt class="intermediate">Intermediate</dt>
+                    <dd>Between 6 months to a year of experience.</dd>
 
-                <dt class="advanced">Advanced</dt>
-                <dd>More than a year of experience.</dd>
-            </dl>
-        </div>
+                    <dt class="advanced">Advanced</dt>
+                    <dd>More than a year of experience.</dd>
+                </dl>
+            </div>
 
-        <div class="skillsImage">
-            <img src="https://peopel-su.github.io/ist263/images/skill_3775447.png" alt="Skills Image" class="profileImg">
-        </div>
+            <div class="skillsImage">
+                <!-- Decorative icon — empty alt so screen readers skip it -->
+                <img src="https://peopel-su.github.io/ist263/images/skill_3775447.png" alt="" class="profileImg">
+            </div>
 
-    </div>
+        </section>
 
-    <div class="skillsflex">
+        <section class="skillsflex" aria-label="Skills tables">
+
             <!-- Coding Skills -->
-            <div class="tablecontainer1">
+            <div class="tablecontainer1" id="main-content">
                 <table>
                     <caption>Coding Skills</caption>
-                    <tr>
-                        <th>Category</th>
-                        <th>Skill</th>
-                        <th>Proficiency</th>
-                    </tr>
-
-                    <tr class="evenrow">
-                        <td>Coding</td>
-                        <td>C</td>
-                        <td><p class="intermediate">Intermediate</p></td>
-                    </tr>
-                    <tr class="oddrow">
-                        <td>Coding</td>
-                        <td>C++</td>
-                        <td><p class="intermediate">Intermediate</p></td>
-                    </tr>
-                    <tr class="evenrow">
-                        <td>Coding</td>
-                        <td>Haskell</td>
-                        <td><p class="beginner">Beginner</p></td>
-                    </tr>
-                    <tr class="oddrow">
-                        <td>Coding</td>
-                        <td>HTML/CSS</td>
-                        <td><p class="beginner">Beginner</p></td>
-                    </tr>
-                    <tr class="evenrow">
-                        <td>Coding</td>
-                        <td>Java</td>
-                        <td><p class="intermediate">Intermediate</p></td>
-                    </tr>
-                    <tr class="oddrow">
-                        <td>Coding</td>
-                        <td>JavaScript</td>
-                        <td><p class="beginner">Beginner</p></td>
-                    </tr>
-                    <tr class="evenrow">
-                        <td>Coding</td>
-                        <td>Python</td>
-                        <td><p class="advanced">Advanced</p></td>
-                    </tr>
-                    <tr class="oddrow">
-                        <td>Coding</td>
-                        <td>Racket</td>
-                        <td><p class="beginner">Beginner</p></td>
-                    </tr>
-                    <tr class="evenrow">
-                        <td>Coding</td>
-                        <td>Swift</td>
-                        <td><p class="beginner">Beginner</p></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">Skill</th>
+                            <th scope="col">Proficiency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="evenrow">
+                            <td>Coding</td>
+                            <td>C</td>
+                            <td><p class="intermediate">Intermediate</p></td>
+                        </tr>
+                        <tr class="oddrow">
+                            <td>Coding</td>
+                            <td>C++</td>
+                            <td><p class="intermediate">Intermediate</p></td>
+                        </tr>
+                        <tr class="evenrow">
+                            <td>Coding</td>
+                            <td>Haskell</td>
+                            <td><p class="beginner">Beginner</p></td>
+                        </tr>
+                        <tr class="oddrow">
+                            <td>Coding</td>
+                            <td>HTML/CSS</td>
+                            <td><p class="beginner">Beginner</p></td>
+                        </tr>
+                        <tr class="evenrow">
+                            <td>Coding</td>
+                            <td>Java</td>
+                            <td><p class="intermediate">Intermediate</p></td>
+                        </tr>
+                        <tr class="oddrow">
+                            <td>Coding</td>
+                            <td>JavaScript</td>
+                            <td><p class="beginner">Beginner</p></td>
+                        </tr>
+                        <tr class="evenrow">
+                            <td>Coding</td>
+                            <td>Python</td>
+                            <td><p class="advanced">Advanced</p></td>
+                        </tr>
+                        <tr class="oddrow">
+                            <td>Coding</td>
+                            <td>Racket</td>
+                            <td><p class="beginner">Beginner</p></td>
+                        </tr>
+                        <tr class="evenrow">
+                            <td>Coding</td>
+                            <td>Swift</td>
+                            <td><p class="beginner">Beginner</p></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
 
@@ -114,32 +121,35 @@
             <div class="tablecontainer2">
                 <table>
                     <caption>Language Skills</caption>
-                    <tr>
-                        <th>Category</th>
-                        <th>Skill</th>
-                        <th>Proficiency</th>
-                    </tr>
-
-                    <tr class="evenrow">
-                        <td>Language</td>
-                        <td>English</td>
-                        <td><p class="advanced">Advanced</p></td>
-                    </tr>
-                    <tr class="oddrow">
-                        <td>Language</td>
-                        <td>French</td>
-                        <td><p class="beginner">Beginner</p></td>
-                    </tr>
-                    <tr class="evenrow">
-                        <td>Language</td>
-                        <td>Japanese</td>
-                        <td><p class="intermediate">Intermediate</p></td>
-                    </tr>
-                    <tr class="oddrow">
-                        <td>Language</td>
-                        <td>Spanish</td>
-                        <td><p class="advanced">Advanced</p></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">Skill</th>
+                            <th scope="col">Proficiency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="evenrow">
+                            <td>Language</td>
+                            <td>English</td>
+                            <td><p class="advanced">Advanced</p></td>
+                        </tr>
+                        <tr class="oddrow">
+                            <td>Language</td>
+                            <td>French</td>
+                            <td><p class="beginner">Beginner</p></td>
+                        </tr>
+                        <tr class="evenrow">
+                            <td>Language</td>
+                            <td>Japanese</td>
+                            <td><p class="intermediate">Intermediate</p></td>
+                        </tr>
+                        <tr class="oddrow">
+                            <td>Language</td>
+                            <td>Spanish</td>
+                            <td><p class="advanced">Advanced</p></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
 
@@ -147,39 +157,45 @@
             <div class="tablecontainer3">
                 <table>
                     <caption>Sports/Hobbies</caption>
-                    <tr>
-                        <th>Category</th>
-                        <th>Skill</th>
-                        <th>Proficiency</th>
-                    </tr>
-
-                    <tr class="evenrow">
-                        <td>Sports</td>
-                        <td>Cycling</td>
-                        <td><p class="beginner">Beginner</p></td>
-                    </tr>
-                    <tr class="oddrow">
-                        <td>Esports</td>
-                        <td>Competing Professionally</td>
-                        <td><p class="advanced">Advanced</p></td>
-                    </tr>
-                    <tr class="evenrow">
-                        <td>Sports</td>
-                        <td>Running</td>
-                        <td><p class="advanced">Advanced</p></td>
-                    </tr>
-                    <tr class="oddrow">
-                        <td>Sports</td>
-                        <td>Swimming</td>
-                        <td><p class="advanced">Advanced</p></td>
-                    </tr>
-                    <tr class="evenrow">
-                        <td>Sports</td>
-                        <td>Tennis</td>
-                        <td><p class="beginner">Beginner</p></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">Skill</th>
+                            <th scope="col">Proficiency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="evenrow">
+                            <td>Sports</td>
+                            <td>Cycling</td>
+                            <td><p class="beginner">Beginner</p></td>
+                        </tr>
+                        <tr class="oddrow">
+                            <td>Esports</td>
+                            <td>Competing Professionally</td>
+                            <td><p class="advanced">Advanced</p></td>
+                        </tr>
+                        <tr class="evenrow">
+                            <td>Sports</td>
+                            <td>Running</td>
+                            <td><p class="advanced">Advanced</p></td>
+                        </tr>
+                        <tr class="oddrow">
+                            <td>Sports</td>
+                            <td>Swimming</td>
+                            <td><p class="advanced">Advanced</p></td>
+                        </tr>
+                        <tr class="evenrow">
+                            <td>Sports</td>
+                            <td>Tennis</td>
+                            <td><p class="beginner">Beginner</p></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
-        </div>
-    </body>
+
+        </section>
+    </main>
+
+</body>
 </html>
