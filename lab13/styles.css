@@ -84,10 +84,9 @@ table {
     width: 100%;
 }
 
-
 /* Proficiency colors */
 .beginner {
-    color:#049604;
+    color:#0adf0a;
 }
 
 .intermediate {
@@ -95,9 +94,8 @@ table {
 }
 
 .advanced {
-    color:#ff0000;
+    color:#ff4444;
 }
-
 
 /* Links */
 nav a {color:#50e8ff;}
@@ -116,6 +114,10 @@ nav {
     padding: 10px;
 }
 
+nav span {
+    color: rgb(29, 172, 194);
+}
+
 /* Media */
 @media (max-width: 768px) {
     nav a {
@@ -127,7 +129,6 @@ nav {
         display: none;
     }
 }
-
 
  /* Skip to content link */
 .skip {
