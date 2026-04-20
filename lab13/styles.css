@@ -51,10 +51,10 @@ p, li, dt, dd, form, table{
 
 /* Skills Flex Table */
 .evenrow {
-    background-color:#868686;
+    background-color:#3C3939;
 }
 .oddrow {           
-    background-color: #464646;
+    background-color: #333333;
 }
 
 .skillsflex {
@@ -86,7 +86,7 @@ table {
 
 /* Proficiency colors */
 .beginner {
-    color:#0adf0a;
+    color:#02ec02;
 }
 
 .intermediate {
@@ -94,7 +94,7 @@ table {
 }
 
 .advanced {
-    color:#ff4444;
+    color:#FF3333;
 }
 
 /* Links */
