@@ -47,7 +47,18 @@ p, li, dt, dd, form, table{
     flex-basis: 50%;
     margin: 40px;
 }
+/* Proficiency colors */
+.beginner {
+    color:#02ec02;
+}
 
+.intermediate {
+    color:#effd2b;
+}
+
+.advanced {
+    color: #FF7A7A;;
+}
 
 /* Skills Flex Table */
 .evenrow {
@@ -82,19 +93,6 @@ p, li, dt, dd, form, table{
 
 table {
     width: 100%;
-}
-
-/* Proficiency colors */
-.beginner {
-    color:#02ec02;
-}
-
-.intermediate {
-    color:#effd2b;
-}
-
-.advanced {
-    color: #FF6666;;
 }
 
 /* Links */
