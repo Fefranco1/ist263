@@ -1,0 +1,628 @@
+/* ── BASE ── */
+body {
+    font-family: Georgia, serif;
+    background: #D9C6BA;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── HEADER ── */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 32px;
+    border-bottom: 1px solid #ddd;
+    background: #b8a295;
+}
+
+header h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* ── NAV ── */
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.9rem;
+}
+
+nav a.active,
+nav a:hover {
+    color: #c0392b;
+}
+
+/* ── MAIN ── */
+main {
+    flex: 1;
+    padding: 32px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* ── FOOTER ── */
+footer {
+    background: #b8a295;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .copyright {
+    font-size: 0.85rem;
+    color: #444;
+}
+
+/* ── SHARED: IMAGE PLACEHOLDER ── */
+.imgPlaceholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border: 1px solid #bbb;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgPlaceholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imgSource {
+    font-size: 0.75rem;
+    color: #666;
+    margin: 5px 0 0 0;
+    font-style: italic;
+}
+
+.imgSource a {
+    color: #c0392b;
+    text-decoration: none;
+}
+
+.imgSource a:hover {
+    text-decoration: underline;
+}
+
+/* ── SHARED: SECTION LABEL ── */
+.sectionLabel {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* ── INDEX: RATING SECTION ── */
+.ratingSection {
+    background: #e7d1a9;
+    border-radius: 4px;
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+}
+
+.ratingSection h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.ratingList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ratingList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ratingList li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    background: #fff;
+}
+
+.divider {
+    width: 1px;
+    background: #bbb;
+    margin: 0 24px;
+    align-self: stretch;
+}
+
+/* ── HISTORY: PIE CARDS ── */
+.pieCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pieCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #cbb9ac;
+}
+
+.pieCard:last-child {
+    border-bottom: none;
+}
+
+.pieCard.textLeft .pieText       { order: 1; }
+.pieCard.textLeft .imgPlaceholder { order: 2; }
+.pieCard.textRight .imgPlaceholder { order: 1; }
+.pieCard.textRight .pieText      { order: 2; }
+
+.pieText h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pieText p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #333;
+}
+
+/* ── HISTORY: SIMILAR DESSERTS ── */
+.similarGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.similarCard {
+    background: #e7d1a9;
+    border-radius: 4px;
+    padding: 16px 18px;
+}
+
+.similarCard h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.similarCard p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: #444;
+}
+
+/* ── REVIEWS: REVIEW CARD ── */
+.reviewCard {
+    background: #e7d1a9;
+    border-radius: 4px;
+    padding: 18px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    margin-bottom: 16px;
+}
+
+.reviewLeft {
+    padding-right: 20px;
+}
+
+.reviewLeft h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.reviewLeft p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: #333;
+}
+
+.reviewDivider {
+    width: 1px;
+    background: #bbb;
+    margin: 0 20px;
+    align-self: stretch;
+}
+
+.reviewRight {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.reviewRightTop {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.reviewMiddle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.checkRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #333;
+    white-space: nowrap;
+}
+
+.checkRow input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #555;
+    cursor: default;
+    pointer-events: none;
+    flex-shrink: 0;
+}
+
+.totalScore {
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.totalScore span {
+    font-size: 1.4rem;
+    font-weight: 900;
+    display: block;
+    margin-top: 2px;
+}
+
+/* ── REVIEWS: SUBMIT FORM ── */
+.formCard {
+    background: #e7d1a9;
+    border-radius: 4px;
+    padding: 20px 24px;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: start;
+    padding: 14px 0;
+    border-bottom: 1px solid #bbb;
+    gap: 16px;
+}
+
+.formRow:last-of-type {
+    border-bottom: none;
+}
+
+.formRowLabel {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-top: 6px;
+}
+
+.formRowFields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.fieldGroup label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.fieldGroup input[type="text"] {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background: #f9f3ec;
+    font-family: Georgia, serif;
+    font-size: 0.88rem;
+    box-sizing: border-box;
+}
+
+.ratingBlock {
+    padding-top: 16px;
+}
+
+.ratingBlockTitle {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.ratingGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
+}
+
+.ratingGridBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
+    margin-top: 16px;
+}
+
+.ratingItem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ratingItemTitle {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.radioRow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.83rem;
+    color: #333;
+}
+
+.radioRow input[type="radio"] {
+    accent-color: #555;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.reviewTextareaGroup label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.reviewTextareaGroup textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background: #f9f3ec;
+    font-family: Georgia, serif;
+    font-size: 0.88rem;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formFooter {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+}
+
+.submitBtn {
+    background: #b8a295;
+    border: 1px solid #888;
+    border-radius: 3px;
+    padding: 8px 24px;
+    font-family: Georgia, serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #222;
+}
+
+.submitBtn:hover {
+    background: #a08878;
+    color: #fff;
+}
+
+/* ── REVIEWS: GUIDELINES ── */
+.guidelinesSection h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.guidelinesSection ul {
+    padding-left: 20px;
+    line-height: 1.8;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.guidelinesSection p {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ── REVIEWS: INGREDIENT BANNER ── */
+.ingredientBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 18px 24px;
+    background: #e7d1a9;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+
+.ingredientItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #555;
+}
+
+.ingredientItem svg {
+    display: block;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    header h1 {
+        white-space: normal;
+    }
+
+    nav {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    main {
+        padding: 16px;
+        gap: 24px;
+    }
+
+    footer {
+        padding: 14px 16px;
+        justify-content: center;
+    }
+
+    .imgPlaceholder {
+        aspect-ratio: 16/10;
+    }
+
+    /* Index: rating section */
+    .ratingSection {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+        margin: 16px 0;
+    }
+
+    /* History: pie cards */
+    .pieCard {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .pieCard.textLeft .pieText,
+    .pieCard.textRight .pieText       { order: 1; }
+    .pieCard.textLeft .imgPlaceholder,
+    .pieCard.textRight .imgPlaceholder { order: 2; }
+
+    /* History: similar desserts */
+    .similarGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reviews: review card */
+    .reviewCard {
+        grid-template-columns: 1fr;
+        padding: 14px 16px;
+    }
+
+    .reviewLeft {
+        padding-right: 0;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #bbb;
+    }
+
+    .reviewDivider {
+        display: none;
+    }
+
+    .reviewRight {
+        padding-top: 14px;
+    }
+
+    .reviewRightTop {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .checkRow {
+        white-space: normal;
+    }
+
+    /* Reviews: form */
+    .formCard {
+        padding: 14px;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .formRowLabel {
+        padding-top: 0;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #cbb9ac;
+    }
+
+    .formRowFields {
+        grid-template-columns: 1fr;
+    }
+
+    .ratingGrid,
+    .ratingGridBottom {
+        grid-template-columns: 1fr;
+    }
+
+    .submitBtn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .ingredientBanner {
+        gap: 18px;
+        padding: 14px 12px;
+    }
+}

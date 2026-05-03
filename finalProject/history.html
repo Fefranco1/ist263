@@ -1,0 +1,229 @@
+<!DOCTYPE html> <!--- this is history.html-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>History &amp; Types of Apple Pies</title>
+    <style>
+      /* Page-specific: section heading sizes and text spacing */
+      .historySection h2 {
+        font-size: 1.8rem;
+        font-weight: 900;
+        margin-bottom: 12px;
+      }
+
+      .historySection p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+      }
+
+      .worldSection h2,
+      .similarSection h2,
+      .whySection h2 {
+        font-size: 1.4rem;
+        font-weight: 900;
+        margin-bottom: 16px;
+      }
+
+      .worldSection p,
+      .whySection p {
+        line-height: 1.6;
+      }
+
+      @media (max-width: 600px) {
+        .historySection h2,
+        .worldSection h2,
+        .similarSection h2,
+        .whySection h2 {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <h1>Apple Pie Reviews!</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html" class="active">History &amp; Types</a>
+        <a href="reviews.html">Reviews</a>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+      <!-- History of Apple Pie -->
+      <section class="historySection">
+        <h2>The History of Apple Pie</h2>
+        <p>
+          Many people think apple pie is American, but it actually came from Europe. The first apple pie recipe was written in England in 1381. This recipe was very different from modern apple pies. The crust was thick and hard, made to hold the filling during baking. People often did not eat the crust because it was too tough.
+        </p>
+        <p>
+          In medieval Europe, sugar was very expensive, so early apple pies used honey or were not very sweet. The pies also included figs, raisins, pears, and saffron along with the apples.
+        </p>
+        <p>
+          European settlers brought apple seeds and pie recipes to America in the 1600s. Apples grew very well in the American climate. By the 1700s, a lot of farms had apple trees. Apples were cheap and easy to store through the winter, which made apple pie a common dessert. By the 1800s, apple pie became a symbol of American culture and home cooking.
+        </p>
+      </section>
+
+      <!-- Apple Pie Around the World -->
+      <section class="worldSection">
+        <h2>Apple Pie Around the World</h2>
+
+        <div class="pieCards">
+
+          <!-- 1: text left, image right -->
+          <div class="pieCard textLeft">
+            <div class="pieText">
+              <h3>United States — Classic Apple Pie</h3>
+              <p>The classic American apple pie has a double crust (top and bottom). The filling includes sliced apples, sugar, cinnamon, and sometimes nutmeg. Americans often serve apple pie warm with vanilla ice cream on top.</p>
+              <p class="imgSource">Image from: <a href="https://unsplash.com/photos/baked-pie-bkXzABDt08Q" target="_blank">Unsplash</a></p>
+            </div>
+            <div class="imgPlaceholder">
+              <img src="media/Page2/ClassicApplePie.jpg" alt="Classic American Apple Pie">
+            </div>
+          </div>
+
+          <!-- 2: image left, text right -->
+          <div class="pieCard textRight">
+            <div class="imgPlaceholder">
+              <img src="media/Page2/TarteAux.jpg" alt="French tarte aux pommes">
+            </div>
+            <div class="pieText">
+              <h3>France — Tarte aux Pommes</h3>
+              <p>This is a French apple tart with thin apple slices arranged in neat circles on top. It has no top crust. The apples are often glazed with apricot jam after baking, which makes them shiny. The crust is more like a sweet pastry than American pie crust.</p>
+              <p class="imgSource">Image from: <a href="https://mission-food.com/sweet-paris-tarte-aux-pommes-and/" target="_blank">Mission Food Adventure</a></p>
+            </div>
+          </div>
+
+          <!-- 3: text left, image right -->
+          <div class="pieCard textLeft">
+            <div class="pieText">
+              <h3>England — British Apple Pie</h3>
+              <p>British apple pie is similar to American pie but sometimes includes raisins, blackberries, or other fruits mixed with the apples. Some recipes use custard or cream inside the pie.</p>
+              <p class="imgSource">Image from: <a href="https://unsplash.com/photos/a-pie-sitting-on-top-of-a-wooden-table-UVCje0Jc7W0" target="_blank">Unsplash</a></p>
+            </div>
+            <div class="imgPlaceholder">
+              <img src="media/Page2/BritishApplePie.jpg" alt="British apple pie">
+            </div>
+          </div>
+
+          <!-- 4: image left, text right -->
+          <div class="pieCard textRight">
+            <div class="imgPlaceholder">
+              <img src="media/Page2/Apfelkuchen.jpg" alt="German Apfelkuchen">
+            </div>
+            <div class="pieText">
+              <h3>Germany — Apfelkuchen</h3>
+              <p>This is more like a cake than a pie. It has a soft, cakey base with apple slices baked on top. Sometimes it has a crumb topping or a glaze. Germans serve it with whipped cream or coffee.</p>
+              <p class="imgSource">Image from: <a href="https://unsplash.com/s/photos/Apfelkuchen" target="_blank">Unsplash</a></p>
+            </div>
+          </div>
+
+          <!-- 5: text left, image right -->
+          <div class="pieCard textLeft">
+            <div class="pieText">
+              <h3>Netherlands — Dutch Apple Pie / Appeltaart</h3>
+              <p>Dutch apple pie is very thick, sometimes 2–3 inches tall. It has a lattice top crust and the filling often includes raisins, lemon juice, and cinnamon. The Dutch serve it with whipped cream.</p>
+              <p class="imgSource">Image from: <a href="https://www.americastestkitchen.com/recipes/16488-appeltaart-dutch-apple-pie" target="_blank">America's Test Kitchen</a></p>
+            </div>
+            <div class="imgPlaceholder">
+              <img src="media/Page2/DutchAppeltaart.webp" alt="Dutch appeltaart">
+            </div>
+          </div>
+
+          <!-- 6: image left, text right -->
+          <div class="pieCard textRight">
+            <div class="imgPlaceholder">
+              <img src="media/Page2/Äppelpaj.jpg" alt="Swedish appelpaj">
+            </div>
+            <div class="pieText">
+              <h3>Sweden — Äppelpaj</h3>
+              <p>Swedish apple pie has a crumble topping instead of a crust. It is served warm with vanilla sauce or ice cream. The topping is buttery and sweet.</p>
+              <p class="imgSource">Image from: <a href="https://fredriksfika.allas.se/fredriks-pajer/appelpaj-med-havregryn-och-mandelmjol/" target="_blank">Fredriks Fika</a></p>
+            </div>
+          </div>
+
+          <!-- 7: text left, image right -->
+          <div class="pieCard textLeft">
+            <div class="pieText">
+              <h3>Austria — Apfelstrudel (Apple Strudel)</h3>
+              <p>Apple strudel is made with very thin pastry dough that is stretched until you can see through it. The dough is rolled around a filling of apples, raisins, sugar, and cinnamon. The pastry becomes crispy and flaky when baked. Strudel is served warm with powdered sugar or vanilla sauce.</p>
+              <p class="imgSource">Image from: <a href="https://www.lilvienna.com/original-viennese-apple-strudel/" target="_blank">Lil' Vienna</a></p>
+            </div>
+            <div class="imgPlaceholder">
+              <img src="media/Page2/Apfelstrudel.jpg" alt="Austrian apple strudel">
+            </div>
+          </div>
+
+          <!-- 8: image left, text right -->
+          <div class="pieCard textRight">
+            <div class="imgPlaceholder">
+              <img src="media/Page2/Szarlotka.jpg" alt="Polish szarlotka">
+            </div>
+            <div class="pieText">
+              <h3>Poland — Szarlotka</h3>
+              <p>This Polish apple pie has a shortbread-like crust on the bottom and often a crumb topping. The filling is thick and has lots of cinnamon. Some versions use grated apples instead of sliced apples.</p>
+              <p class="imgSource">Image from: <a href="https://szefowakuchni.pl/przepis/szarlotka/" target="_blank">Szefowa Kuchni</a></p>
+            </div>
+          </div>
+
+          <!-- 9: text left, image right -->
+          <div class="pieCard textLeft">
+            <div class="pieText">
+              <h3>Russia — Sharlotka</h3>
+              <p>Russian apple cake is very simple. It is more like a cake than a pie, with apple slices baked into a light, fluffy batter. There is no crust. It is served plain or with powdered sugar.</p>
+              <p class="imgSource">Image from: <a href="https://www.foodandwine.com/apple-sharlotka-6416444" target="_blank">Food & Wine</a></p>
+            </div>
+            <div class="imgPlaceholder">
+              <img src="media/Page2/Sharlotka.jpeg" alt="Russian sharlotka apple cake">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Similar Apple Desserts -->
+      <section class="similarSection">
+        <h2>Similar Apple Desserts</h2>
+        <div class="similarGrid">
+          <div class="similarCard">
+            <h3>Apple Crisp / Apple Crumble</h3>
+            <p>This dessert has baked apples on the bottom and a crumbly, buttery topping made from flour, butter, sugar, and sometimes oats. It has no bottom crust, which makes it easier to make than pie.</p>
+          </div>
+          <div class="similarCard">
+            <h3>Apple Brown Betty</h3>
+            <p>This is an American dessert with layers of spiced apples and buttered bread crumbs. It is baked until golden and crispy on top.</p>
+          </div>
+          <div class="similarCard">
+            <h3>Tarte Tatin</h3>
+            <p>This French upside-down tart has caramelized apples on the bottom. The pastry is placed on top and the whole thing is flipped over after baking. The apples become sweet and sticky from the caramel.</p>
+          </div>
+          <div class="similarCard">
+            <h3>Apple Turnovers</h3>
+            <p>These are small, individual pastries filled with spiced apples. The dough is folded into a triangle or half-moon shape and baked or fried until golden.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why So Many Versions -->
+      <section class="whySection">
+        <h2>Why So Many Versions?</h2>
+        <p>
+          Apples grow in many countries with cool climates. Each culture developed its own way of baking with apples based on local ingredients and traditions. Some cultures had access to butter and made flaky crusts. Others used cake-like batters or thin stretched dough. But all these desserts share the same goal: to make the sweet, tart flavor of apples even more delicious.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <span class="copyright">&copy; 2026</span>
+    </footer>
+
+  </body>
+</html>
