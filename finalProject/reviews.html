@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="media/Page1/apple.png">
     <title>Reviews &amp; Submit</title>
     <style>
-      /* Page-specific: section heading sizes */
       .reviewsSection h2, .submitSection h2 {
         font-size: 1.8rem;
         font-weight: 900;
         margin-bottom: 10px;
       }
 
-      .reviewsSection > p, .submitSection > p {
+      .reviewsSection p, .submitSection p {
         line-height: 1.6;
         margin-bottom: 20px;
       }
 
       @media (max-width: 600px) {
-        .reviewsSection h2,
-        .submitSection h2 {
+        .reviewsSection h2, .submitSection h2 {
           font-size: 1.3rem;
         }
       }
     </style>
   </head>
   <body>
+    <a class="skip" href="#main-content">Skip to main content</a>
 
     <!-- Header -->
     <header>
@@ -34,42 +34,37 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="history.html">History &amp; Types</a>
-        <a href="reviews.html" class="active">Reviews &amp; Submit</a>
+        <a href="reviews.html" class="active">Reviews</a>
       </nav>
     </header>
 
     <!-- Main -->
-    <main>
+    <main id="main-content">
 
-      <!-- REVIEWS SECTION -->
+      <!-- Review Section -->
       <section class="reviewsSection">
         <h2>My Apple Pie Reviews</h2>
         <p>
-          Here are all the apple pies I have tried. Each review includes photos,
-          my detailed thoughts, and my rating using the 5-point system. I will
-          keep adding new reviews as I discover more pies.
+          Here are all the apple pies I have tried. Each review includes photos, my detailed thoughts, and my rating using the 5-point system. I will keep adding new reviews as I discover more pies.
         </p>
 
-        <p class="sectionLabel">Rating</p>
+        <p class="sectionLabel">RATING</p>
 
         <!-- Review: Citi Market -->
         <article class="reviewCard">
           <div class="reviewLeft">
             <h3>Citi Market</h3>
             <p>
-              This apple pie is amazing. The crust is perfectly flaky and golden.
-              When you bite into it, it cracks just right. The apples are fresh
-              and you can taste each slice. The sweetness is perfect — not
-              too much sugar, just enough to bring out the apple flavor. Would I
-              buy it again? Yes, absolutely!
+              This apple pie is amazing. The crust is perfectly flaky and golden. When you bite into it, it cracks just right. The apples are fresh and you can taste each slice. The sweetness is perfect, not too much sugar, just enough to bring out the apple flavor. <br> <br> Would I buy it again?<br>
+              Yes, absolutely!
             </p>
           </div>
 
           <div class="reviewDivider"></div>
 
           <div class="reviewRight">
-            <div class="reviewRightTop">
-              <div class="reviewMiddle">
+            <div>
+              <div>
                 <label class="checkRow"><input type="checkbox" checked disabled> 1 Point — Visual Appeal</label>
                 <label class="checkRow"><input type="checkbox" checked disabled> 1 Point — Balanced Sweetness</label>
                 <label class="checkRow"><input type="checkbox" checked disabled> 1 Point — Perfect Crust</label>
@@ -91,19 +86,15 @@
           <div class="reviewLeft">
             <h3>Costco</h3>
             <p>
-              This apple pie is good but not great. The crust visually looks nice.
-              However, the top and bottom crust is a little too thick. The apples
-              taste okay, but they are very soft, almost like applesauce. The pie
-              is very sweet and requires ice cream to balance out the sweetness.
-              Would I buy it again? Maybe, if nothing else is available.
+              This apple pie is good but not great. The crust visually looks nice. However, the top and bottom crust is a little too thick. The apples taste okay, but they are very soft, almost like applesauce. The pie is very sweet and requires ice cream to balance out the sweetness.<br><br>Would I buy it again?<br>Maybe, if nothing else is available.
             </p>
           </div>
 
           <div class="reviewDivider"></div>
 
           <div class="reviewRight">
-            <div class="reviewRightTop">
-              <div class="reviewMiddle">
+            <div>
+              <div>
                 <label class="checkRow"><input type="checkbox" checked disabled> 1 Point — Visual Appeal</label>
                 <label class="checkRow"><input type="checkbox" disabled> 1 Point — Balanced Sweetness</label>
                 <label class="checkRow"><input type="checkbox" checked disabled> 1 Point — Perfect Crust</label>
@@ -122,13 +113,10 @@
 
       </section>
 
-      <!-- SUBMIT SECTION -->
       <section class="submitSection">
         <h2>Submit Your Own Apple Pie Review</h2>
         <p>
-          Have you tried an apple pie? Share your review! I want to hear about
-          the apple pies you have tasted. Use my rating system to score the pie
-          and tell me what you think. Your review might appear on this website!
+          Have you tried an apple pie? Share your review! I want to hear about the apple pies you have tasted. Use my rating system to score the pie and tell me what you think. Your review might appear on this website!
         </p>
 
         <p class="sectionLabel">Rating</p>
@@ -138,13 +126,13 @@
 
             <!-- Your Information -->
             <div class="formRow">
-              <div class="formRowLabel">Your Information:</div>
-              <div class="formRowFields">
-                <div class="fieldGroup">
+              <div>Your Information:</div>
+              <div>
+                <div>
                   <label for="name">Name</label>
                   <input type="text" id="name" name="name">
                 </div>
-                <div class="fieldGroup">
+                <div>
                   <label for="email">Email</label>
                   <input type="text" id="email" name="email">
                 </div>
@@ -153,13 +141,13 @@
 
             <!-- Apple Pie Information -->
             <div class="formRow">
-              <div class="formRowLabel">Apple Pie Information:</div>
-              <div class="formRowFields">
-                <div class="fieldGroup">
+              <div>Apple Pie Information:</div>
+              <div>
+                <div>
                   <label for="bakery">Restaurant Name</label>
                   <input type="text" id="bakery" name="bakery">
                 </div>
-                <div class="fieldGroup">
+                <div>
                   <label for="price">Price</label>
                   <input type="text" id="price" name="price">
                 </div>
@@ -168,44 +156,44 @@
 
             <!-- Apple Pie Rating -->
             <div class="ratingBlock">
-              <p class="ratingBlockTitle">Apple Pie Rating:</p>
+              <p>Apple Pie Rating:</p>
 
               <div class="ratingGrid">
-                <div class="ratingItem">
-                  <p class="ratingItemTitle">Visual Appeal</p>
+                <div>
+                  <p>Visual Appeal</p>
                   <label class="radioRow"><input type="radio" name="visual" value="yes"> Yes — Did the pie look good?</label>
                   <label class="radioRow"><input type="radio" name="visual" value="no"> No — Did the pie look good?</label>
                 </div>
-                <div class="ratingItem">
-                  <p class="ratingItemTitle">Balanced Sweetness</p>
+                <div>
+                  <p>Balanced Sweetness</p>
                   <label class="radioRow"><input type="radio" name="sweetness" value="yes"> Yes — Was the sweetness just right?</label>
                   <label class="radioRow"><input type="radio" name="sweetness" value="no"> No — Was the sweetness just right?</label>
                 </div>
-                <div class="ratingItem">
-                  <p class="ratingItemTitle">Perfect Crust</p>
+                <div>
+                  <p>Perfect Crust</p>
                   <label class="radioRow"><input type="radio" name="crust" value="yes"> Yes — Was the crust good?</label>
                   <label class="radioRow"><input type="radio" name="crust" value="no"> No — Was the crust good?</label>
                 </div>
-                <div class="ratingItem">
-                  <p class="ratingItemTitle">Good Apple Texture</p>
+                <div>
+                  <p>Good Apple Texture</p>
                   <label class="radioRow"><input type="radio" name="texture" value="yes"> Yes — Were the apples the right texture?</label>
                   <label class="radioRow"><input type="radio" name="texture" value="no"> No — Were the apples the right texture?</label>
                 </div>
               </div>
 
               <div class="ratingGridBottom">
-                <div class="ratingItem">
-                  <p class="ratingItemTitle">Overall Flavor Balance</p>
+                <div>
+                  <p>Overall Flavor Balance</p>
                   <label class="radioRow"><input type="radio" name="flavor" value="yes"> Yes — Did everything taste good together?</label>
                   <label class="radioRow"><input type="radio" name="flavor" value="no"> No — Did everything taste good together?</label>
                 </div>
-                <div class="reviewTextareaGroup">
+                <div>
                   <label for="review-text">Review</label>
                   <textarea id="review-text" name="message"></textarea>
                 </div>
               </div>
 
-              <div class="formFooter">
+              <div>
                 <button type="submit" class="submitBtn">Submit</button>
               </div>
 

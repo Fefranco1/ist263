@@ -1,12 +1,12 @@
-<!DOCTYPE html> <!--- this is index.html-->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="media/Page1/apple.png">
     <title>Apple Pie Reviews!</title>
     <style>
-      /* Page-specific: intro two-column layout */
       .introSection {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -20,54 +20,47 @@
         margin-bottom: 10px;
       }
 
-      /* Ingredients section: icons left, names right */
+      /* Ingredients */
       .ingredientsSection h2 {
         font-size: 1.8rem;
         font-weight: 900;
         margin-bottom: 16px;
       }
+      
+      #ingredientImages img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+        padding-right: 24px;
+        border-right: 1px solid #bbb;
+      }
 
       .ingredientsLayout {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 0;
         background: #e7d1a9;
         border-radius: 4px;
         padding: 20px 24px;
         align-items: center;
       }
 
-      .ingredientsIcons {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-right: 24px;
-        border-right: 1px solid #bbb;
-      }
-
-      .ingredientNames {
+      .ingredientsLayout ul {
+        list-style: disc;
+        padding-left: 44px;
         display: flex;
         flex-direction: column;
         gap: 12px;
-        padding-left: 24px;
+        margin: 0;
       }
 
-      .ingredientNameRow {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+      .ingredientsLayout li {
         font-size: 0.95rem;
         font-weight: 700;
       }
 
-      .ingredientNameRow::before {
-        content: '';
-        flex-shrink: 0;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: #a06030;
+      .ingredientsLayout li:hover {
+        color: #c0392b;
       }
 
       @media (max-width: 600px) {
@@ -83,23 +76,24 @@
 
         .ingredientsLayout {
           grid-template-columns: 1fr;
-          gap: 16px;
         }
 
-        .ingredientsIcons {
+        .ingredientsLayout #ingredientImages img {
           padding-right: 0;
           border-right: none;
-          border-bottom: 1px solid #bbb;
           padding-bottom: 16px;
+          border-bottom: 1px solid #bbb;
         }
 
-        .ingredientNames {
-          padding-left: 0;
+        .ingredientsLayout ul {
+          padding-left: 24px;
+          padding-top: 16px;
         }
       }
     </style>
   </head>
   <body>
+    <a class="skip" href="#main-content">Skip to main content</a>
 
     <!--  Header  -->
     <header>
@@ -112,10 +106,10 @@
     </header>
 
     <!--  Main  -->
-    <main>
+    <main id="main-content">
 
       <!-- Intro -->
-      <section class="introSection">
+      <section class="introSection" >
         <div class="introText">
           <h2>Who am I?</h2>
           <p>
@@ -156,96 +150,26 @@
         </div>
       </section>
 
-      <!-- Most Common Ingredients -->
       <section class="ingredientsSection">
         <h2>Most Common Ingredients</h2>
         <div class="ingredientsLayout">
-
-          <!-- Left: icons -->
-          <div class="ingredientsIcons">
-
-            <!-- Apple -->
-            <div class="ingredientItem">
-              <svg width="48" height="56" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 8 Q27 2 32 3" stroke="#5a7a3a" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-                <path d="M24 8 Q30 4 34 8 Q30 10 24 8Z" fill="#6a9a40"/>
-                <path d="M14 16 Q8 18 7 28 Q6 40 14 48 Q18 52 24 52 Q30 52 34 48 Q42 40 41 28 Q40 18 34 16 Q30 12 24 14 Q18 12 14 16Z" fill="#c0392b"/>
-                <ellipse cx="18" cy="22" rx="4" ry="6" fill="rgba(255,255,255,0.18)" transform="rotate(-15 18 22)"/>
-                <path d="M22 14 Q24 11 26 14" stroke="#a0291b" stroke-width="1.2" fill="none"/>
-              </svg>
-            </div>
-
-            <!-- Cinnamon -->
-            <div class="ingredientItem">
-              <svg width="48" height="56" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" y="8" width="9" height="38" rx="4.5" fill="#a0522d"/>
-                <rect x="12" y="10" width="2" height="34" rx="1" fill="rgba(255,255,255,0.15)"/>
-                <line x1="10" y1="16" x2="19" y2="16" stroke="#7a3a1a" stroke-width="0.8"/>
-                <line x1="10" y1="24" x2="19" y2="24" stroke="#7a3a1a" stroke-width="0.8"/>
-                <line x1="10" y1="32" x2="19" y2="32" stroke="#7a3a1a" stroke-width="0.8"/>
-                <line x1="10" y1="40" x2="19" y2="40" stroke="#7a3a1a" stroke-width="0.8"/>
-                <rect x="22" y="12" width="9" height="34" rx="4.5" fill="#b8632a"/>
-                <rect x="24" y="14" width="2" height="30" rx="1" fill="rgba(255,255,255,0.15)"/>
-                <line x1="22" y1="20" x2="31" y2="20" stroke="#8a4a20" stroke-width="0.8"/>
-                <line x1="22" y1="28" x2="31" y2="28" stroke="#8a4a20" stroke-width="0.8"/>
-                <line x1="22" y1="36" x2="31" y2="36" stroke="#8a4a20" stroke-width="0.8"/>
-                <rect x="34" y="6" width="8" height="36" rx="4" fill="#8b4513"/>
-                <rect x="36" y="8" width="2" height="32" rx="1" fill="rgba(255,255,255,0.12)"/>
-                <line x1="34" y1="14" x2="42" y2="14" stroke="#6a3010" stroke-width="0.8"/>
-                <line x1="34" y1="22" x2="42" y2="22" stroke="#6a3010" stroke-width="0.8"/>
-                <line x1="34" y1="30" x2="42" y2="30" stroke="#6a3010" stroke-width="0.8"/>
-                <line x1="34" y1="38" x2="42" y2="38" stroke="#6a3010" stroke-width="0.8"/>
-              </svg>
-            </div>
-
-            <!-- Sugar -->
-            <div class="ingredientItem">
-              <svg width="48" height="56" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 26 Q8 48 24 48 Q40 48 40 26Z" fill="#f5e6c8" stroke="#c8a86e" stroke-width="1.5"/>
-                <rect x="13" y="20" width="5" height="5" rx="1" fill="white" stroke="#ddd" stroke-width="0.5" transform="rotate(15 13 20)"/>
-                <rect x="21" y="16" width="6" height="6" rx="1" fill="white" stroke="#ddd" stroke-width="0.5" transform="rotate(-10 21 16)"/>
-                <rect x="30" y="19" width="5" height="5" rx="1" fill="white" stroke="#ddd" stroke-width="0.5" transform="rotate(20 30 19)"/>
-                <rect x="17" y="10" width="4" height="4" rx="1" fill="white" stroke="#ddd" stroke-width="0.5" transform="rotate(5 17 10)"/>
-                <rect x="26" y="11" width="5" height="5" rx="1" fill="white" stroke="#ddd" stroke-width="0.5" transform="rotate(-20 26 11)"/>
-                <path d="M7 26 Q7 24 24 24 Q41 24 41 26" stroke="#c8a86e" stroke-width="2" fill="none"/>
-              </svg>
-            </div>
-
-            <!-- Butter -->
-            <div class="ingredientItem">
-              <svg width="48" height="56" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="6" y="22" width="36" height="22" rx="3" fill="#f5d060"/>
-                <path d="M6 22 L14 14 L44 14 L40 22Z" fill="#f7dc70"/>
-                <path d="M40 22 L44 14 L44 36 L40 44Z" fill="#dab840"/>
-                <rect x="6" y="30" width="36" height="5" fill="rgba(255,255,255,0.35)"/>
-                <text x="24" y="34.5" text-anchor="middle" font-size="4" fill="#a08020" font-family="Georgia,serif" font-weight="bold">BUTTER</text>
-              </svg>
-            </div>
-
-            <!-- Nutmeg -->
-            <div class="ingredientItem">
-              <svg width="48" height="56" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="24" cy="30" rx="14" ry="18" fill="#c8864a"/>
-                <path d="M16 18 Q24 14 32 18" stroke="#a06030" stroke-width="1" fill="none"/>
-                <path d="M13 26 Q24 20 35 26" stroke="#a06030" stroke-width="1" fill="none"/>
-                <path d="M12 34 Q24 28 36 34" stroke="#a06030" stroke-width="1" fill="none"/>
-                <path d="M13 42 Q24 36 35 42" stroke="#a06030" stroke-width="1" fill="none"/>
-                <path d="M24 12 Q26 30 24 48" stroke="#a06030" stroke-width="1.2" fill="none"/>
-                <ellipse cx="24" cy="13" rx="4" ry="3" fill="#a06030"/>
-              </svg>
-            </div>
-
+ 
+          <div id="ingredientImages">
+            <img src="media/Page1/apple.png" alt="Apple" id="imgApple">
+            <img src="media/Page1/cinnamon.png" alt="Cinnamon" id="imgCinnamon" style="display:none">
+            <img src="media/Page1/sugar.png" alt="Sugar" id="imgSugar" style="display:none">
+            <img src="media/Page1/butter.png" alt="Butter" id="imgButter" style="display:none">
+            <img src="media/Page1/nutmeg.png" alt="Nutmeg" id="imgNutmeg" style="display:none">
           </div>
-
-          <!-- Right: names -->
-          <div class="ingredientNames">
-            <div class="ingredientNameRow">Apple</div>
-            <div class="ingredientNameRow">Cinnamon</div>
-            <div class="ingredientNameRow">Sugar</div>
-            <div class="ingredientNameRow">Butter</div>
-            <div class="ingredientNameRow">Nutmeg</div>
-          </div>
-
+ 
+          <ul>
+            <li onclick="ingredientsOff(); document.getElementById('imgApple').style.display='block'">Apple</li>
+            <li onclick="ingredientsOff(); document.getElementById('imgCinnamon').style.display='block'">Cinnamon</li>
+            <li onclick="ingredientsOff(); document.getElementById('imgSugar').style.display='block'">Sugar</li>
+            <li onclick="ingredientsOff(); document.getElementById('imgButter').style.display='block'">Butter</li>
+            <li onclick="ingredientsOff(); document.getElementById('imgNutmeg').style.display='block'">Nutmeg</li>
+          </ul>
+ 
         </div>
       </section>
 
@@ -255,6 +179,16 @@
     <footer>
       <span class="copyright">&copy; 2026</span>
     </footer>
+
+    <script>
+      function ingredientsOff() {
+        document.getElementById('imgApple').style.display    = 'none';
+        document.getElementById('imgCinnamon').style.display = 'none';
+        document.getElementById('imgSugar').style.display    = 'none';
+        document.getElementById('imgButter').style.display   = 'none';
+        document.getElementById('imgNutmeg').style.display   = 'none';
+      }
+    </script>
 
   </body>
 </html>
