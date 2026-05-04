@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a.active {
-  color: #B22222;
+  color: #9F1E1E;
 }
 nav a:hover{
   color: #1da10c;
@@ -100,7 +100,7 @@ footer .copyright {
 
 .imgSource { /* Image source for History.html */
   font-size: 0.75rem;
-  color: #666;
+  color: #666666;
   margin: 5px 0 0 0;
   font-style: italic;
 }
