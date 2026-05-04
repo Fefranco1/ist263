@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     padding: 14px 32px;
     border-bottom: 1px solid #ddd;
-    background: #b8a295;
+    background: #a78675;
 }
 
 header h1 {
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a.active, nav a:hover {
-    color: #c0392b;
+    color: #7E1B1B;
 }
 
 /* Skip */
@@ -70,7 +70,7 @@ main {
 
 /* Footer */
 footer {
-    background: #b8a295;
+    background: #a78675;
     padding: 18px 32px;
     display: flex;
     align-items: center;
@@ -79,7 +79,7 @@ footer {
 
 footer .copyright {
     font-size: 0.85rem;
-    color: #444;
+    color: #424242;
 }
 
 /* Image */
